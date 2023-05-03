@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Manrope', sans-serif;
+}
+
+.btn {
+    padding: 13px 30px;
+    color: white;
+    background-color: #0000ff;
+    border: 1px solid #0000ff;
+    border-radius: 55px;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #0606bb;
+    border-color: #0606bb;
+}
+
+
+.container {
+    width: 100%;
+    background-color: #0a0b29fc;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.input__wrapper {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.form {
+    height: 60vh;
+    width: 45%;
+    margin: auto;
+    text-align: center;
+}
+
+.input__field {
+    width: 49%;
+    font-family: 'Manrope', sans-serif;
+    background-color: #494747;
+    height: 46px;
+    font-size: 17px;
+    padding: 5px 20px;
+    border-radius: 45px;
+    color: white;
+    border: 1px solid #ffffff2d;
+    outline: 0;
+}
+
+.input__field:focus{
+    box-shadow: 0 0 5px rgba(150, 150, 150, 0.5);
+}
+
+.input__field::placeholder{
+    color: #cccccca1;
+}
+
+select {
+    padding: 9px 8px;
+    border-radius: 5px;
+    background: #494747;
+    color: white;
+}
+
+.showDetail {
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    padding: 10px 20px;
+}
+
+.showDetail h2{
+    color: rgb(48, 124, 124);
+}
+
+.showData h2{
+    font-weight: 500;
+    color: white;
+}
+
+.showData {
+    display: grid;
+    gap: 20%;
+    grid-template-columns: 10% 7% 21%;
+    padding: 8px 0;
+}
+
+.price span{
+    font-size: 19px;
+    color: #8c8686;
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .form {
+        width: 87%;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .input__wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .input__field {
+        width: 88%;
+    }
+    
+    .showData {
+        grid-template-columns: 10% 23% 30%;
+    }
+}
+
+@media (max-width: 450px) {
+    .showDetail {
+        gap: 23%;
+        padding: 10px 3px;
+    }
+
+    .showDetail h2{
+        font-size: 18px;
+    }
+
+    .showData h2{
+        font-size: 17px;
+    }
+
+    .price span {
+        font-size: 13px;
+    }
+}
